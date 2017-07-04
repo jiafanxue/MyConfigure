@@ -1,0 +1,20 @@
+<snippet>
+    <content>
+<![CDATA[
+#define BOOST_THREAD_VERSION 4
+#include <boost/thread.hpp>
+#include <boost/thread/lock_factories.hpp>
+#include <boost/thread/lockable_adapter.hpp>
+#include <boost/thread/lockable_concepts.hpp>
+#include <boost/thread/thread_guard.hpp>
+#include <boost/thread/scoped_thread.hpp>
+#include <boost/thread/shared_lock_guard.hpp>
+using namespace boost;
+]]>
+    </content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>#thread</tabTrigger>
+    <description>C/C++ header file</description> //描述信息，可选
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.c, source.c++</scope>
+</snippet>

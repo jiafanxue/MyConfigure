@@ -1,0 +1,15 @@
+<snippet>
+    <content>
+<![CDATA[
+#include <boost/uuid/uuid.hpp>
+#include <boost/uuid/uuid_generators.hpp>
+#include <boost/uuid/uuid_io.hpp>
+using namespace boost::uuids;
+]]>
+    </content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>#uuid</tabTrigger>
+    <description>C/C++ header file</description> //描述信息，可选
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.c, source.c++</scope>
+</snippet>
