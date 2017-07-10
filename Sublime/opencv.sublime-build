@@ -1,0 +1,13 @@
+{
+    "cmd": ["g++", "${file}", "-std=c++14", "-o", "${file_path}/${file_base_name}"],
+    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+    "working_dir": "${file_path}",
+    "selector": "source.c, source.c++",
+    "variants":
+    [
+        {
+            "name": "Run",
+            "cmd":["gnome-terminal", "-x", "bash", "-c", "g++ '${file}' -o '${file_path}/${file_base_name}' -I /usr/local/include/opencv -L /usr/local/lib -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_objdetect -lopencv_ml -lpthread && '${file_path}/${file_base_name}' -I /usr/local/include/opencv -L /usr/local/lib -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_objdetect -lopencv_ml -lpthread;read -n1 -p 'press any key to continue.'"]
+        }
+    ]
+}
